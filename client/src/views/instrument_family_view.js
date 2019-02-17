@@ -1,7 +1,9 @@
 const PubSub = require('../helpers/pub_sub.js');
 
-const InstrumentFamilyView = function (container) {
-  this.container = container;
+let InstrumentFamilyView = class{
+    constructor(container) {
+      this.container = container;
+  }
 };
 
 InstrumentFamilyView.prototype.bindEvents = function () {
